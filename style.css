@@ -41,8 +41,10 @@ body {
     align-items: center;
     justify-content: right;
     font-family: monospace;
-    font-size: 30px;
+    font-size: 40px;
     background-color: rgb(112, 167, 112);
+    color: rgb(1, 1, 124);
+    font-weight: bold;
     margin: 0px 10px;
     padding: 0px 5px;
 }
