@@ -9,11 +9,11 @@ body {
 .calculator {
     display: flex;
     flex-direction: column;
+    max-width: 400px;
+    height: 500px;
     flex: 1;
     align-items: center;
     justify-content: space-between;
-    max-width: 400px;
-    height: 500px;
     border: black solid 3px;
     border-radius: 20px;
     background-color: pink;
