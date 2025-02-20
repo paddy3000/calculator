@@ -9,9 +9,10 @@ body {
 .calculator {
     display: flex;
     flex-direction: column;
-    max-width: 350px;
+    width: 350px;
     height: 500px;
     flex: 1;
+    flex-grow: 0;
     align-items: center;
     justify-content: space-between;
     border: black solid 3px;
