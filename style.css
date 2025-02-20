@@ -20,14 +20,6 @@ body {
     padding: 10px;
 }
 
-/* .buttons {
-    display: flex;
-    flex: 1;
-    height: 400px;
-    flex-direction: column;
-    justify-content: space-between;
-    border: black solid 5px;
-} */
 
 .row {
     display: flex;
@@ -35,23 +27,7 @@ body {
     flex: 1;
     width: 400px;
     justify-content: space-between;
-    /* gap: 10px; */
     padding: 10px 20px;
-}
-
-button {
-    display: flex;
-    flex: 1;
-    border: black solid 2px;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    background-color: rgb(219, 118, 133);
-    color: white;
-    font-weight: bold;
-    margin: 0px 10px;
-    filter: drop-shadow(2px 5px  rgb(150, 113, 119))
 }
 
 .screen {
@@ -67,6 +43,17 @@ button {
     margin: 0px 10px;
 }
 
-.operator {
-    font-weight: bolder;
+button {
+    display: flex;
+    flex: 1;
+    border: black solid 2px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    background-color: rgb(219, 118, 133);
+    color: white;
+    font-weight: bold;
+    margin: 0px 10px;
+    filter: drop-shadow(2px 5px  rgb(150, 113, 119))
 }
