@@ -1,7 +1,8 @@
 const buttons=document.querySelectorAll("button");
 const screen=document.querySelector(".screen");
+
 let currentNumber="";
-let previousNumber=0;
+let previousNumber="";
 let previousNumberTrue=false;
 let operator="";
 let operatorPressed=false;
@@ -12,10 +13,11 @@ equalFunction = function(previousNumber, operator, currentNumber){
     if (previousNumberTrue) {
       if (operator==="+") {return Number(previousNumber)+Number(currentNumber)}
       else if (operator==="-") {return Number(previousNumber)-Number(currentNumber)}
-      else if (operator==="/") {return Number(previousNumber)/Number(currentNumber)}
+      else if (operator==="/") {
+        if (Number(currentNumber)===0) {return "ERROR"} else
+        {return Number(previousNumber)/Number(currentNumber)}
+    }
       else if (operator==="*") {return Number(previousNumber)*Number(currentNumber)}
-    //   operator="";
-    //   operatorPressed=false;
     newNumber=true;
     } else {return currentNumber}
 }
@@ -48,7 +50,19 @@ buttons.forEach(button => {
         previousNumberTrue=false;
         equalPressed=true;
         operatorPressed=false;
+    } else if (button.getAttribute("class")==="clear") {
+        currentNumber="";
+        newNumber=true;
+        if (button.getAttribute("id")==="AC"){
+            operator="";
+            operatorPressed=false;
+            equalPressed=false;
+            previousNumber="";
+            previousNumberTrue=false;
+        }
     }
+
+    if (currentNumber!=="") {currentNumber=Math.round(currentNumber*100000000000)/100000000000};
 
     screen.textContent=currentNumber;
 })

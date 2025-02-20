@@ -57,3 +57,13 @@ button {
     margin: 0px 10px;
     filter: drop-shadow(2px 5px  rgb(150, 113, 119))
 }
+
+.clear {
+    flex-grow: 0;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 60px;
+    font-size: 20px;
+    background-color: white;
+    color: black;
+}
