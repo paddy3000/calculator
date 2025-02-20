@@ -5,18 +5,19 @@ body {
     height: 100vh;
     font-family: sans-serif;
     box-sizing: border-box;
+    background-color: lightblue;
 }
 
 .calculator {
     display: flex;
     flex-direction: column;
-    width: 350px;
-    height: 500px;
     flex: 1;
     flex-grow: 0;
     flex-shrink: 1;
     align-items: center;
     justify-content: space-between;
+    width: 350px;
+    height: 500px;
     border: black solid 3px;
     border-radius: 20px;
     background-color: pink;
@@ -28,40 +29,40 @@ body {
     display: flex;
     flex-direction: row;
     flex: 1;
-    width: 350px;
     justify-content: space-between;
+    width: 350px;
     padding: 10px 20px;
 }
 
 .screen {
     display: flex;
-    border: black solid 2px;
     flex: 1;
-    height: 100px;
     align-items: center;
     justify-content: right;
-    font-family: monospace;
-    font-size: 40px;
-    background-color: rgb(112, 167, 112);
-    color: rgb(1, 1, 124);
-    font-weight: bold;
+    height: 100px;
     margin: 0px 10px;
     padding: 0px 5px;
+    border: black solid 2px;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgb(112, 167, 112);
+    color: rgb(1, 1, 124);
 }
 
 button {
     display: flex;
     flex: 1;
-    border: black solid 2px;
-    border-radius: 40px;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
-    background-color: rgb(219, 118, 133);
-    color: white;
-    font-weight: bold;
+    border-radius: 40px;
     margin: 0px 10px;
-    filter: drop-shadow(2px 5px  rgb(150, 113, 119))
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    border: black solid 2px;
+    filter: drop-shadow(2px 5px  rgb(150, 113, 119));
+    background-color: rgb(219, 118, 133);
 }
 
 .clear {
