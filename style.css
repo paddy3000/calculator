@@ -16,7 +16,7 @@ body {
     flex-shrink: 1;
     align-items: center;
     justify-content: space-between;
-    width: 350px;
+    max-width: 350px;
     height: 500px;
     border: black solid 3px;
     border-radius: 20px;

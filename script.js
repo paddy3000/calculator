@@ -63,7 +63,7 @@ buttons.forEach(button => {
     }
 
     console.log(currentNumber + "," + button.getAttribute("id"));
-    if (currentNumber!=="" && button.getAttribute("id")!==".") {currentNumber=Math.round(currentNumber*100000000000)/100000000000};
+    if (currentNumber!=="" && button.getAttribute("id")!==".") {currentNumber=Math.round(currentNumber*10000000)/10000000};
 
     screen.textContent=currentNumber;
 })
