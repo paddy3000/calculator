@@ -24,7 +24,7 @@ equalFunction = function(previousNumber, operator, currentNumber){
 
 buttons.forEach(button => {
     button.addEventListener("click", function(e) {
-    if (button.getAttribute("class")==="number") {
+    if (button.getAttribute("class")==="number" && (!String(currentNumber).includes(".") | button.getAttribute("id")!==".")) {
         if (newNumber===true | equalPressed===true) {
             currentNumber=button.getAttribute("id");
             newNumber=false;
@@ -62,7 +62,8 @@ buttons.forEach(button => {
         }
     }
 
-    if (currentNumber!=="") {currentNumber=Math.round(currentNumber*100000000000)/100000000000};
+    console.log(currentNumber + "," + button.getAttribute("id"));
+    if (currentNumber!=="" && button.getAttribute("id")!==".") {currentNumber=Math.round(currentNumber*100000000000)/100000000000};
 
     screen.textContent=currentNumber;
 })
